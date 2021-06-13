@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+secret_access_token=$1
+
+set_github_config() {
+  git config --global user.name "GitHub Actions Bot"
+  git config --global user.email "ecess@purdue.edu"
+}
+
+checkout_ambassadors() {
+  mkdir out/ecea
+  git checkout origin/ecea --track
+  ls | grep -v out | xargs -t -I '{}' mv {} out/ecea
+}
+
+checkout_student_society() {
+  echo "ECESS Website in Development" >> out/README.md
+}
+
+add_cname_file() {
+  echo "purdue-ece.matthewwen.com" > out/CNAME
+}
+
+push_to_gh_pages() {
+  cd out
+  git init
+  git add *
+  set_github_config
+  git commit -m "Deployment of Purdue Student Society Websites"
+  git branch -m gh-pages
+  git remote add origin https://x-access-token:"$secret_access_token"@github.com/Purdue-ECESS/website
+  echo "Force GH Pages to Production"
+  git push origin gh-pages --force
+  cd ../
+}
+
+rm -rf out
+mkdir out
+checkout_ambassadors
+checkout_student_society
+add_cname_file
+push_to_gh_pages
+git checkout main
