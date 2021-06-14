@@ -11,20 +11,27 @@ checkout_ambassadors() {
   mkdir out/ecea
   git checkout origin/ecea --track
   ls | grep -v out | xargs -t -I '{}' mv {} out/ecea
+  touch out/ecea/.nojekyll
 }
 
 checkout_student_society() {
-  echo "ECESS Website in Development" >> out/README.md
+  echo "<p>ECESS Website in Development</p>" > out/index.html
+}
+
+checkout_wece() {
+  mkdir out/wece
+  echo "<p>WECE Website in Development</p>" > out/wece/index.html
 }
 
 add_cname_file() {
-  echo "purdue-ece.matthewwen.com" > out/CNAME
+  echo "www.purdue-ecess.org" > out/CNAME
+  touch out/.nojekyll
 }
 
 push_to_gh_pages() {
   cd out
   git init
-  git add *
+  git add * .nojekyll
   set_github_config
   git commit -m "Deployment of Purdue Student Society Websites"
   git branch -m gh-pages
@@ -38,6 +45,7 @@ rm -rf out
 mkdir out
 checkout_ambassadors
 checkout_student_society
+checkout_wece
 add_cname_file
 push_to_gh_pages
 git checkout main
