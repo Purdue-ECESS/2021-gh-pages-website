@@ -11,6 +11,7 @@ checkout_ambassadors() {
   mkdir out/ecea
   git checkout origin/ecea --track
   ls | grep -v out | xargs -t -I '{}' mv {} out/ecea
+  touch out/ecea/.nojekyll
 }
 
 checkout_student_society() {
