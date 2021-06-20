@@ -15,7 +15,9 @@ checkout_ambassadors() {
 }
 
 checkout_student_society() {
-  echo "<p>ECESS Website in Development</p>" > out/index.html
+  git reset --hard origin/ecess
+  ls | grep -v out | xargs -t -I '{}' mv {} out/
+  touch out/.nojekyll
 }
 
 checkout_wece() {
@@ -27,18 +29,16 @@ checkout_wece() {
 
 add_cname_file() {
   echo "www.purdue-ecess.org" > out/CNAME
-  touch out/.nojekyll
 }
 
 push_to_gh_pages() {
   cd out
   git init
-  git add * .nojekyll
+  git add .
   set_github_config
   git commit -m "Deployment of Purdue Student Society Websites"
   git branch -m gh-pages
   git remote add origin https://x-access-token:"$secret_access_token"@github.com/Purdue-ECESS/website
-  echo "Force GH Pages to Production"
   git push origin gh-pages --force
   cd ../
 }
