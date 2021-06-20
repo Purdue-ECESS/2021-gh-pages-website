@@ -20,7 +20,9 @@ checkout_student_society() {
 
 checkout_wece() {
   mkdir out/wece
-  echo "<p>WECE Website in Development</p>" > out/wece/index.html
+  git checkout origin/wece --track
+  ls | grep -v out | xargs -t -I '{}' mv {} out/wece
+  touch out/wece/.nojekyll
 }
 
 add_cname_file() {
