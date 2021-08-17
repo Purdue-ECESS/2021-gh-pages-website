@@ -45,6 +45,7 @@ push_to_gh_pages() {
 
 rm -rf out
 mkdir out
+cp 404.html out/404.html
 checkout_ambassadors
 checkout_student_society
 checkout_wece
