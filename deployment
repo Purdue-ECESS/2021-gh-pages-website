@@ -27,6 +27,20 @@ checkout_wece() {
   touch out/wece/.nojekyll
 }
 
+checkout_spark() {
+  mkdir out/spark
+  git reset --hard origin/spark
+  ls | grep -v out | xargs -t -I '{}' mv {} out/spark
+  touch out/spark/.nojekyll
+}
+
+checkout_justin() {
+  mkdir out/justin
+  git reset --hard origin/justin
+  ls | grep -v out | xargs -t -I '{}' mv {} out/justin
+  touch out/justin/.nojekyll
+}
+
 add_cname_file() {
   echo "www.purdue-ecess.org" > out/CNAME
 }
@@ -49,6 +63,8 @@ cp 404.html out/404.html
 checkout_ambassadors
 checkout_student_society
 checkout_wece
+checkout_spark
+checkout_justin
 add_cname_file
 push_to_gh_pages
 git reset --hard origin/main
