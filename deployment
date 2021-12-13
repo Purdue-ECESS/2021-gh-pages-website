@@ -42,7 +42,7 @@ checkout_justin() {
 }
 
 add_cname_file() {
-  echo "www.purdue-ecess.org" > out/CNAME
+  echo "2021.purdue-ecess.org" > out/CNAME
 }
 
 push_to_gh_pages() {
