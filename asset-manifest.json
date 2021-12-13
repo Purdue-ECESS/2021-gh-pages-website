@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.05ccb7f5.chunk.css",
+    "main.js": "/static/js/main.6b0f9196.chunk.js",
+    "main.js.map": "/static/js/main.6b0f9196.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4245d87f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4245d87f.js.map",
+    "static/css/2.27dd871e.chunk.css": "/static/css/2.27dd871e.chunk.css",
+    "static/js/2.2e423b67.chunk.js": "/static/js/2.2e423b67.chunk.js",
+    "static/js/2.2e423b67.chunk.js.map": "/static/js/2.2e423b67.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.27dd871e.chunk.css.map": "/static/css/2.27dd871e.chunk.css.map",
+    "static/css/main.05ccb7f5.chunk.css.map": "/static/css/main.05ccb7f5.chunk.css.map",
+    "static/js/2.2e423b67.chunk.js.LICENSE.txt": "/static/js/2.2e423b67.chunk.js.LICENSE.txt",
+    "static/media/Akshaj_Prasannakumar.d58e21fe.png": "/static/media/Akshaj_Prasannakumar.d58e21fe.png",
+    "static/media/Alexandra_Sichterman.0012e5b3.jpeg": "/static/media/Alexandra_Sichterman.0012e5b3.jpeg",
+    "static/media/Altay_Atik.0c976b24.png": "/static/media/Altay_Atik.0c976b24.png",
+    "static/media/Alyssa_DeLouise.bf64aeff.jpeg": "/static/media/Alyssa_DeLouise.bf64aeff.jpeg",
+    "static/media/Amita_Pandey.1b624ff4.jpeg": "/static/media/Amita_Pandey.1b624ff4.jpeg",
+    "static/media/Andrew_Lake.685d727d.png": "/static/media/Andrew_Lake.685d727d.png",
+    "static/media/Claire_Poukey.27593991.jpg": "/static/media/Claire_Poukey.27593991.jpg",
+    "static/media/Denae_Galloway.dc856852.jpeg": "/static/media/Denae_Galloway.dc856852.jpeg",
+    "static/media/Edmund_Leung.f0465784.png": "/static/media/Edmund_Leung.f0465784.png",
+    "static/media/Giselle_Bender.b3f24017.png": "/static/media/Giselle_Bender.b3f24017.png",
+    "static/media/Hope_Post.3742b0c2.png": "/static/media/Hope_Post.3742b0c2.png",
+    "static/media/Jack_Brewer.9673d7eb.png": "/static/media/Jack_Brewer.9673d7eb.png",
+    "static/media/Leigh_Ann.2c989023.png": "/static/media/Leigh_Ann.2c989023.png",
+    "static/media/Naveen_Vivek.bd32166c.jpeg": "/static/media/Naveen_Vivek.bd32166c.jpeg",
+    "static/media/Ryan_Villarreal.35915f48.jpeg": "/static/media/Ryan_Villarreal.35915f48.jpeg",
+    "static/media/Samantha_Unger.f50a1d1f.jpeg": "/static/media/Samantha_Unger.f50a1d1f.jpeg",
+    "static/media/Sara_Hui.d46aeb86.jpeg": "/static/media/Sara_Hui.d46aeb86.jpeg",
+    "static/media/ecess-logo-1.7a3419aa.png": "/static/media/ecess-logo-1.7a3419aa.png",
+    "static/media/style.css": "/static/media/pre.3b1cd6a3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4245d87f.js",
+    "static/css/2.27dd871e.chunk.css",
+    "static/js/2.2e423b67.chunk.js",
+    "static/css/main.05ccb7f5.chunk.css",
+    "static/js/main.6b0f9196.chunk.js"
+  ]
+}
